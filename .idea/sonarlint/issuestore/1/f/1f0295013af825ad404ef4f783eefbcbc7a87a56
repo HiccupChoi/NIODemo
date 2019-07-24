@@ -1,0 +1,7 @@
+
+<squid:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+fsquid:S2095"QUse try-with-resources or close this "ServerSocketChannel" in a "finally" clause.(§öÆä
+`squid:S2095"FUse try-with-resources or close this "Selector" in a "finally" clause.(ŠÞö ùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(å‡ëÇøÿÿÿÿ
+isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(œû¿Ø
