@@ -1,6 +1,8 @@
 package com.leetcode;
 
 
+import lombok.ToString;
+
 /**
  * @Author: Hiccup
  * @Date: 2019/8/17 15:44
@@ -44,6 +46,7 @@ public class Three {
     /**
      * 自定义链表
      */
+    @ToString
     static class ListNode{
         int value;
         ListNode next;
@@ -54,14 +57,6 @@ public class Three {
         ListNode setNext(ListNode listNode){
             this.next = listNode;
             return listNode;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "value=" + value +
-                    ", next=" + next +
-                    '}';
         }
     }
 
