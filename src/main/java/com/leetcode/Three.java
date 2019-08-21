@@ -1,8 +1,5 @@
 package com.leetcode;
 
-
-import lombok.ToString;
-
 /**
  * @Author: Hiccup
  * @Date: 2019/8/17 15:44
@@ -33,31 +30,17 @@ public class Three {
             carry = sum / 10;
             listNode.next = new ListNode(sum % 10);
             listNode= listNode.next;
-            if (listNodeOne != null) listNodeOne = listNodeOne.next;
-            if (listNodeTwo != null) listNodeTwo = listNodeTwo.next;
+            if (listNodeOne != null) {
+                listNodeOne = listNodeOne.next;
+            }
+            if (listNodeTwo != null) {
+                listNodeTwo = listNodeTwo.next;
+            }
         }
         if (carry > 0){
             listNode.next= new ListNode(carry);
         }
         return returnListNode.next;
-    }
-
-
-    /**
-     * 自定义链表
-     */
-    @ToString
-    static class ListNode{
-        int value;
-        ListNode next;
-        ListNode(int value){
-            this.value = value;
-        }
-
-        ListNode setNext(ListNode listNode){
-            this.next = listNode;
-            return listNode;
-        }
     }
 
 }
