@@ -3,7 +3,7 @@ package com.thread;
 /**
  * @Author: Hiccup
  * @Date: 2019/9/2 5:14 PM
- * 验证notify()是否是公平的
+ * 验证notify()是否是公平的(基于java1.8的Hotspot jvm)
  */
 public class WaitAndNotify {
     /**
