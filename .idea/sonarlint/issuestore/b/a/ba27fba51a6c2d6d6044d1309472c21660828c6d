@@ -1,0 +1,10 @@
+
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹ëØ 
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(’ŠŞ“úÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÆİ¾ÿÿÿÿÿ
+˜squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ûš
+Nsquid:S1854"7Remove this useless assignment to local variable "sun".(ØÚÚç
+?squid:S1481"(Remove this unused "sun" local variable.(ØÚÚç
+Esquid:S1068	".Remove this unused "testString" private field.(œÈÏ
