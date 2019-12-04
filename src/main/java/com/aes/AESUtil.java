@@ -61,15 +61,14 @@ public class AESUtil {
     }
 
     public static void main(String[] args) {
-//        try {
-//            String encrypt = AESUtil.encrypt("{" + "hotelid:\"300001286\"," + "poiid:\"300001286\"" + "}", "UTF-8", "AES/CBC/PKCS5Padding", "businessinfo1119", "businessinfo1119");
-//            System.out.println("MyApplication---encrypt = " + encrypt);
-//            String decrypt = AESUtil.decrypt(encrypt, "UTF-8", "AES/CBC/PKCS5Padding", "businessinfo1119", "businessinfo1119");
-//            System.out.println("MyApplication---decrypt = " + decrypt);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-        System.out.println(System.getProperty("user.dir"));
+        try {
+            String encrypt = AESUtil.encrypt("nkmvftdjarugjjdb", "UTF-8", "AES/CBC/PKCS5Padding", "businessinfo1119", "businessinfo1119");
+            System.out.println("MyApplication---encrypt = " + encrypt);
+            String decrypt = AESUtil.decrypt(encrypt, "UTF-8", "AES/CBC/PKCS5Padding", "businessinfo1119", "businessinfo1119");
+            System.out.println("MyApplication---decrypt = " + decrypt);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 }
