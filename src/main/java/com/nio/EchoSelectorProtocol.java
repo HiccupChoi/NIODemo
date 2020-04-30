@@ -5,6 +5,7 @@ import java.nio.channels.SocketChannel;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.ByteBuffer;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * @author hiccup
@@ -15,7 +16,10 @@ public class EchoSelectorProtocol implements TCPProtocol {
      */
 	private int bufSize;
 
+	private Scanner scanner;
+
 	EchoSelectorProtocol(int bufSize){
+		scanner = new Scanner(System.in);
         this.bufSize = bufSize;
 	}
 
@@ -55,7 +59,11 @@ public class EchoSelectorProtocol implements TCPProtocol {
     @Override
 	public void handleWrite(SelectionKey key) throws IOException {
     //获取与该信道关联的缓冲区，里面有之前读取到的数据
-    ByteBuffer buf = (ByteBuffer) key.attachment();
+    String string = new String(((ByteBuffer) key.attachment()).array()).trim();
+    System.out.println("客户端：" + string);
+	System.out.print("服务端：");
+	string = scanner.nextLine();
+	ByteBuffer buf = ByteBuffer.wrap(string.getBytes());
 	//重置缓冲区，准备将数据写入信道
     buf.flip(); 
     SocketChannel clntChan = (SocketChannel) key.channel();

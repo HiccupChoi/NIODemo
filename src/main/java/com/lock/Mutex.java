@@ -63,7 +63,7 @@ public class Mutex implements Lock {
     }
 
     @Override
-    public void lockInterruptibly() throws InterruptedException {
+    public void lockInterruptibly() {
 
     }
 

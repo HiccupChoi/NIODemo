@@ -60,13 +60,13 @@ public class TCPEchoClientNonblocking {
 					throw new SocketException("Connection closed prematurely");
 				}
 
-				if (clntChan.read(readBuf) == 0){
-					break;
-				}
 				//计算接收到的总字节数
 				totalBytesRcvd += bytesRcvd;
 				//在等待通信完成的过程中，程序可以执行其他任务，以体现非阻塞IO的异步特性
 				//这里为了演示该方法的使用，同样只是一直打印"."
+				if (clntChan.read(readBuf) == 0 && totalBytesRcvd > 0){
+					break;
+				}
 
 			}
 			//打印出接收到的数据
