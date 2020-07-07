@@ -1,6 +1,8 @@
 package com.test;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 
 /**
  * @Author: Hiccup
@@ -11,7 +13,8 @@ public class test {
     private static final int[] WAIT_TIME_LIST = {0, 10, 20, 40, 60, 80, 100, 120, 140, 160, 180, 360, 360, 720, 720, 1440, 1440, 2880, 2880, 2880};
 
     public static void main(String[] args) {
-        array();
+//        array();
+        System.out.println("2  xx  ".trim().length());
     }
 
     private static void test(){
